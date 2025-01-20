@@ -1,3 +1,7 @@
 def factorial(n):
-    print(n*(n-1)*(n-2)*(n-3));
-factorial(3);
+    if n==0:
+        return 1;
+    else:
+        return n*factorial(n-1);
+
+print(factorial(4));
